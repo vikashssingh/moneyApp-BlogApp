@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/blogs", blogRoutes);   
 app.use("/reviews", reviewRoutes);   
 
-const CONNECTION_URL = "mongodb://localhost/blogs";
+const CONNECTION_URL = "mongodb+srv://Vikash:djpzAnvG!*rz_4W@cluster0.9oy783x.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 3333;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true })
